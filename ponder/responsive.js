@@ -1,22 +1,15 @@
 let menuButton = document.getElementsByClassName("menu-btn")[0]
 
-console.log(menuButton)
+let nav = document.getElementsByTagName("nav")[0]
 
 //event listener
-menuButton.addEventListener("click" , handleMenuButtonClick)
+menuButton.addEventListener("click", handleMenuButtonClick)
 
-function handleMenuButtonClick(e){
-    console.log(e)
-    //toggle on/off the menu display
+function handleMenuButtonClick() {
 
-    //grab the nav from the DOM
-    let nav = document.querySelector("nav")
+    //toggle menu
+    nav.classList.toggle("show")
 
-    //toggle the.hide class on/off
-    nav.classList.toggle("hide")
-
-    //profit
+    //change button animation
+    menuButton.classList.toggle("change")
 }
-
-
-
