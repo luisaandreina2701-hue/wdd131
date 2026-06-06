@@ -12,16 +12,16 @@ function updateNotesField() {
   // Show the travel notes on the form if they are choosing many campuses and require it
   
   if(value === "many"){
-    notesContainer.hiden = false
+    notesContainer.hidden = false
     notes.required = true
   }else{
-    notesContainer.hiden = true
+    notesContainer.hidden = true
     notes.required = false
   }
 
 }
 
-travelRange.addEventListener("change", updateNotesField);
+travelRange.addEventListener("change",updateNotesField);
 updateNotesField();
 
 
@@ -54,7 +54,7 @@ form.addEventListener("submit", function (event) {
   // Validate the input
   // Let the user know to select at least one campus
 
-  if(type === "one" && selectedCampuses.length == 0){
+  if(type === "one" && selectedCampuses.length > 1){
     output.textContent = "You promise you would come to one campus " +
     "Like Samson of old you have broke you covenant, please selected one campus"
     return;
@@ -62,7 +62,7 @@ form.addEventListener("submit", function (event) {
 
   
   // Let the user know if they choose many campuses but didn't put a note that they need to add a note
-if(type === "many" && notes,length == 0){
+if(type === "many" && note.length === 0){
     output.textContent = "There's have been an error, please contact your administrator"
     return;
 }
