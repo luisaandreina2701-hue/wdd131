@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="recipies.css">
 
     <title>Recipe Book</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="recipies.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,62 +41,38 @@
 <main>
 
     <form class="search">
-        <input type="text" placeholder="Find a recipe">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Find a recipe"
+        >
+
         <button type="submit">
             <img src="images/search.png" alt="Search">
         </button>
     </form>
 
     <article class="recipe-card">
-
-        <img class="recipe-image"
-             src="images/Warm Apple Crumble_ Vanilla bean ice cream, salted caramel_.jpeg"
-             alt="Apple Crisp">
-
-        <div class="recipe-details">
-
-            <div class="tag">dessert</div>
-
-            <h2>Apple Crisp</h2>
-
-            <span
-                class="rating"
-                role="img"
-                aria-label="Rating: 4 out of 5 stars"
-            >
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">☆</span>
-            </span>
-
-            <p class="description">
-                This apple crisp recipe is a simple yet delicious fall
-                dessert that's great served warm with vanilla ice cream.
-            </p>
-
-        </div>
-
+        <!-- JavaScript inserts the recipe here -->
     </article>
 
 </main>
 
 <footer>
 
-    <a href="https://www.flaticon.com/free-icons/recipe"
-       title="recipe icons">
+    <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
         Recipe icons created by Freepik - Flaticon
     </a>
 
     <div class="social">
-        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
         <a href="#"><img src="images/instagram.png" alt="instagram icon"></a>
         <a href="#"><img src="images/youtube.png" alt="youtube icon"></a>
         <a href="#"><img src="images/pinterest.png" alt="pinterest icon"></a>
     </div>
 
 </footer>
+
+<script src="recipies.js"></script>
 
 </body>
 </html>
